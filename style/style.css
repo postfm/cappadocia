@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "Balqis";
+  src: url("../fonts/Balqis.woff2") format("woff2"),
+    url("../fonts/Balqis.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-LightItalic";
+  src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+body {
+  font-family: "RobotoCondensed-Light";
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-section {
+  max-width: 1920px;
+  margin: 200px auto;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 28px;
+}
+.header__menu-item {
+  display: inline-block;
+}
+.header__menu-item + .header__menu-item {
+  margin-left: 52px;
+}
+.header__menu-link:hover {
+  text-decoration: underline;
+}
+.header__phone {
+  position: relative;
+  padding-left: 40px;
+}
+.header__phone::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/phone.svg);
+}
+.header__title {
+  position: relative;
+  padding-top: 152px;
+  font-family: "Balqis";
+  font-size: 250px;
+  line-height: 334px;
+  text-align: center;
+}
+
+.header__title span {
+  position: absolute;
+  display: block;
+  top: 425px;
+  right: 85px;
+  font-family: "RobotoCondensed-LightItalic";
+  font-size: 56px;
+  line-height: 66px;
+}
+
+.fairy-tail__title span {
+  margin-left: 180px;
+}
+.title {
+  margin-bottom: 100px;
+  font-family: "Balqis";
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 128px;
+
+  color: #e2ab3f;
+}
+.title span {
+  display: block;
+  margin-top: -25px;
+  font-family: "RobotoCondensed-LightItalic";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000;
+}
+.fairy-tail__inner {
+  position: relative;
+}
+.fairy-tail__slider {
+  width: 50%;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 70px;
+  height: 70px;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: transparent;
+
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: 0;
+  background-image: url(../images/prev-btn.svg);
+}
+
+.slick-next {
+  right: 0;
+  background-image: url(../images/next-btn.svg);
+}
+
+.fairy-tail__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.fairy-tail__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: auto;
+  padding-left: 55px;
+  height: 100%;
+}
+.fairy-tail__body-title {
+  font-family: "RobotoCondensed-Regular";
+}
+
+.fairy-tail__text {
+  padding: 10px 0;
+}
+
+.our-trip__inner {
+  position: relative;
+}
+.our-trip__content {
+  width: 50%;
+  padding-right: 55px;
+}
+.our-trip__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.our-trip__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%;
+}
+.our-trip__title span {
+  margin-left: 240px;
+}
+.our-trip__list {
+  margin: 5px 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.our-trip__list li:first-child {
+  margin-bottom: 20px;
+  font-family: "RobotoCondensed-Regular";
+}
+.our-trip__button {
+  padding: 11px 54px;
+  font-family: "RobotoCondensed-Light";
+  font-size: 24px;
+  line-height: 28px;
+
+  border: 1px solid #e2ab3f;
+  text-transform: uppercase;
+}
+.our-trip__slider {
+  width: 50%;
+  margin-left: auto;
+}
+
+.hotel__title span {
+  margin-left: 120px;
+}
+.hotel__inner {
+  display: flex;
+}
+.hotel__img {
+  margin-right: 100px;
+}
+.hotel__text {
+  margin-bottom: 20px;
+}
+.hotel__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.hotel__gallery a {
+  margin-top: 50px;
+}
+
+.price {
+  background-image: url(../images/price__bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom 18% right 9%;
+}
+.price__title span {
+  margin-left: 120px;
+}
+.price__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.price__on,
+.price__off {
+  width: 50%;
+  padding-right: 70px;
+}
+.price__on-title,
+.price__off-title {
+  margin-bottom: 50px;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 28px;
+}
+.prise__on-list-item,
+.price__off-list-title {
+  margin-bottom: 20px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.contacts__info-price {
+  margin-left: 120px;
+}
+.contacts__info-date,
+.contacts__info-price {
+  font-family: "Balqis";
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 100px;
+
+  color: #e2ab3f;
+}
+.contacts__info-date span,
+.contacts__info-price span {
+  display: block;
+  margin-top: -10px;
+  margin-left: 130px;
+  font-family: "RobotoCondensed-LightItalic";
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.contacts__form {
+  max-width: 383px;
+  margin: 0 auto;
+}
+.contacts__form-title {
+  margin-bottom: 50px;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.contacts__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 31px;
+  padding-right: 15px;
+
+  font-family: "RobotoCondensed-Light";
+  font-size: 18px;
+  line-height: 21px;
+
+  border: 1px solid #e2ab3f;
+}
+.contacts__input::placeholder {
+  color: #000000;
+}
+.contacts__form-button {
+  padding: 11px 45px;
+  font-family: "RobotoCondensed-Light";
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #e2ab3f;
+  background-color: transparent;
+}
+
+.footer {
+  height: 100vh;
+  padding-top: 96px;
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contact {
+  width: 356px;
+  height: 527px;
+  padding-top: 71px;
+  background-image: url(../images/footer-contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.footer__contact-title {
+  margin-bottom: 50px;
+  font-family: "Balqis";
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 89px;
+
+  color: #e2ab3f;
+}
+.footer-phone {
+  margin-bottom: 20px;
+}
+.footer-email {
+  margin-bottom: 38px;
+}
+.footer-phone,
+.footer-email {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+}
+.footer-phone::before,
+.footer-email::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+}
+.footer-phone::before {
+  background-image: url(../images/footer-phone-icon.svg);
+}
+.footer-email::before {
+  background-image: url(../images/footer-email-icon.svg);
+}
+.footer__social-link {
+  margin: 0 7px;
+}
+.footer__text {
+  font-family: "Balqis";
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 115px;
+}
