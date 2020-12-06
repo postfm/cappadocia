@@ -180,6 +180,21 @@
     font-size: 50px;
     line-height: 70px;
   }
+  .contacts__info-date,
+  .contacts__info-price {
+    font-size: 75px;
+    line-height: 80px;
+  }
+  .contacts__info-date span,
+  .contacts__info-price span {
+    margin-left: 110px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contacts__form-title {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -214,5 +229,13 @@
   }
   .our-trip__content {
     width: 90%;
+  }
+  .contacts__content {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .contacts__form-title {
+    margin-bottom: 30px;
+    font-size: 19px;
   }
 }
